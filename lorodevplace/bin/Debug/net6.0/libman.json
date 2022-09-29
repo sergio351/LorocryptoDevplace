@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap-icons@1.9.1",
+      "destination": "wwwroot/bootstrap-icons/"
+    },
+    {
+      "library": "glightbox@3.2.0",
+      "destination": "wwwroot/lib/glightbox/"
+    },
+    {
+      "provider": "unpkg",
+      "library": "remixicon@2.5.0",
+      "destination": "wwwroot/lib/remixicon/"
+    },
+    {
+      "library": "Swiper@8.4.2",
+      "destination": "wwwroot/lib/Swiper/"
+    },
+    {
+      "library": "aos@2.3.4",
+      "destination": "wwwroot/lib/aos/"
+    },
+    {
+      "library": "boxicons@2.1.4",
+      "destination": "wwwroot/lib/boxicons/"
+    }
+  ]
+}

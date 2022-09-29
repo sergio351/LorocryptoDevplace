@@ -1,0 +1,217 @@
+:root {
+    --main-bg-color: #198754;
+    --Ojo: #5d5d5d;
+    --boton_hover: #e5be25;
+    --boton_neutro: #cda816;
+}
+@font-face {
+    font-family: "Comfortaa";
+    src: url("assets/Fonts/Comfortaa-Bold.ttf") format("truetype");
+  }
+
+body {
+    padding: 0px;
+    background-color: var(--main-bg-color);
+    position: absolute;
+}
+
+.app {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.app::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.desktop-1 {
+    left: 150px;
+    position: absolute;
+    transform: scale(0.8);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.Loro{
+    top: 100px;
+    left: 650px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.Bille{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.billetera {
+    border-radius: 22px;
+    width: 674px;
+    height: 421px;
+    background-color: #a35c08;
+    top: 582px;
+    left: 607px;
+    position: absolute;
+    box-shadow: 3px 13px 25px rgba(0, 0, 0, 0.5);
+}
+
+.cierre {
+    border-radius: 26px;
+    width: 185px;
+    height: 107px;
+    background-color: #724005;
+    top: 739px;
+    left: 1127px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.cierregoogle{
+    border-radius: 26px;
+    width: 185px;
+    height: 107px;
+    background-color: #724005;
+    top: 615px;
+    left: 1127px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-size: 50%;
+    background-image: url('/assets/img/googleLogo.png');
+    background-repeat: no-repeat;
+    background-position: 13% center;
+}
+
+.boton {
+    top: 758px;
+    left: 1151px;
+    width: 69px;
+    height: 69px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--boton_neutro);
+    position: absolute;
+    border:none;
+    background-image: url('/assets/img/Next.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.boton:hover {
+    background: var(--boton_hover);
+    background-image: url('/assets/img/Next.png');
+    background-repeat: no-repeat;
+    background-position: center ;
+}
+
+
+.next {
+    width: 40px;
+    top: 22px;
+    right: 13px;
+    position: absolute;
+}
+
+.next:hover+.boton {
+    background: var(--boton_hover);
+}
+
+.boxusuario {
+    size: 100%;
+    padding: 12px 25px;
+    display: inline-block;
+    border: 0px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 89px;
+    width: 405px;
+    height: 65px;
+    background-color: #734005;
+    top: 732px;
+    left: 652px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-family: Comfortaa;
+    color: #fedeb8;
+}
+
+.boxusuario::placeholder {
+    font-size: 32px;
+    font-family: Comfortaa, Bold;
+    color: #fedeb8;
+}
+
+
+
+.boxcontraseña {
+    padding: 12px 25px;
+    display: inline-block;
+    border: 0px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    border-radius: 89px;
+    width: 405px;
+    height: 65px;
+    background-color: #734005;
+    top: 820px;
+    left: 652px;
+    position: absolute;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 32px;
+    font-family: Comfortaa;
+    color: #fedeb8;
+}
+
+.boxcontraseña::placeholder {
+    font-size: 32px;
+    font-family: Comfortaa;
+    color: #fedeb8;
+}
+
+
+.olvidosucontraseña {
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 20px;
+    font-family: Comfortaa;
+    left: 652px;
+    top: 908px;
+    width: 247px;
+    height: 22px;
+    position: absolute;
+    line-height: auto;
+    color: #ffd5a4;
+}
+
+.registrarse {
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 20px;
+    font-family: Comfortaa;
+    left: 938px;
+    top: 908px;
+    width: 119px;
+    height: 22px;
+    position: absolute;
+    line-height: auto;
+    color: #ffd5a4;
+}
+
+.iniciarsesion {
+    text-align: left;
+    vertical-align: text-top;
+    font-size: 48px;
+    font-family: Comfortaa;
+    left: 678px;
+    top: 655px;
+    width: 337px;
+    height: 54px;
+    position: absolute;
+    line-height: auto;
+    color: #3b2001;
+}
