@@ -9,8 +9,10 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  color: #444444;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+    min-height: 100%;
+    width:100%;
 }
 
 a {
@@ -22,6 +24,7 @@ a:hover {
   color: #73c5eb;
   text-decoration: none;
 }
+
 
 h1,
 h2,

@@ -11,6 +11,7 @@
     <title>Iniciar Sesion</title>
     <link rel="stylesheet" href="~/js/anime.min.js">
     <link href="~/css/Login.css" rel="stylesheet" type="text/css">
+    <link href="~/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css" />
     <style>
         
         </style>
@@ -19,7 +20,7 @@
 <body>
     <div class="col-xs-12">
     <div class="center-block">
-    </div>>
+    </div>
     <div class="app">
         <div id="desktop-1" class="desktop-1">
             <div id="Loro" class="Loro">
@@ -36,12 +37,11 @@
                 <form>
                     <input type="text" id="boxusuario" class="boxusuario" placeholder="Usuario" onclick="myMove()"/>
                     <input type="password" id="boxcontraseña" class="boxcontraseña" placeholder="Contraseña" onclick="myMove()"/>
-                    <a id="nextB" type="submit" class="boton" value=" " onclick="aHome()" asp-area="" asp-controller="Home" asp-action="Billetera">
-                    </a>
+                    <a id="nextB" type="submit" class="boton" value="Iniciar" onclick="aHome()"  asp-area="" asp-controller="Home" asp-action="Billetera"><i class="bi bi-box-arrow-right w-100"></i></a>
                 </form>
                 <a id="¿olvidosucontraseña?" class="olvidosucontraseña" href="../forgotpass">
                     ¿Olvido su contraseña?</a>
-                <a id="registrarse" class="registrarse" href="../SignUp">
+                <a id="registrarse" class="registrarse" asp-area="" asp-controller="Home" asp-action="Registro">
                     Registrarse</a>
                 <div id="iniciarsesion" class="iniciarsesion">
                     Iniciar sesion</div>
