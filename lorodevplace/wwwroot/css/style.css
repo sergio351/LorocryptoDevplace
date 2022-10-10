@@ -8,11 +8,12 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
     font-family: "Open Sans", sans-serif;
     color: #444444;
     min-height: 100%;
-    width:100%;
+    width: 100%;
 }
 
 a {
@@ -88,17 +89,17 @@ h6 {
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #159669;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    right: 15px;
+    bottom: 15px;
+    z-index: 996;
+    background: #37b8b4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition: all 0.4s;
 }
 
 .back-to-top i {
@@ -107,10 +108,10 @@ h6 {
   line-height: 0;
 }
 
-.back-to-top:hover {
-  background: #7eaa66;
-  color: #fff;
-}
+    .back-to-top:hover {
+        background: #f8d5ba;
+        color: #fff;
+    }
 
 .back-to-top.active {
   visibility: visible;
@@ -126,10 +127,10 @@ h6 {
   padding: 15px 0;
 }
 
-#header.header-scrolled,
-#header.header-inner-pages {
-  background: #159669e8;
-}
+    #header.header-scrolled,
+    #header.header-inner-pages {
+        background: #37b8b4d1;
+    }
 
 #header .logo {
   font-size: 45px;
@@ -177,7 +178,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   color: #fff;
   white-space: nowrap;
@@ -204,7 +205,7 @@ h6 {
   margin-left: 30px;
   border-radius: 50px;
   color: #fff;
-  font-size: 16px;
+  font-size: 24px;
   border: 2px solid #e5c69a;
   font-weight: 600;
 }
@@ -396,10 +397,23 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+p {
+    font-size: 22px;
+    text-align:justify;
+}
+.img-fluid {
+    max-width: 130%;
+    height: auto;
+}
+
+.img-fluid1 {
+    max-width: 100%;
+    height: auto;
+}
 #hero {
-  width: 100%;
-  height: 80vh;
-  background: #159669;
+    width: 100%;
+    height: 80vh;
+    background: #37b8b4;
 }
 
 #hero .container {
@@ -417,13 +431,13 @@ h6 {
 #hero h2 {
   color: rgba(255, 255, 255, 0.6);
   margin-bottom: 50px;
-  font-size: 24px;
+  font-size: 28px;
 }
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 30px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 10px 28px 11px 28px;
@@ -545,41 +559,42 @@ section {
 }
 
 .section-title {
-  text-align: center;
-  padding-bottom: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 22px;
 }
 
-.section-title h2 {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  color: #159669;
-}
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+        color: #37b8b4;
+    }
 
-.section-title h2::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 120px;
-  height: 1px;
-  background: #ddd;
-  bottom: 1px;
-  left: calc(50% - 60px);
-}
+        .section-title h2::before {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 120px;
+            height: 1px;
+            background: #ddd;
+            bottom: 1px;
+            left: calc(50% - 60px);
+        }
 
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 40px;
-  height: 3px;
-  background: #7eaa66;
-  bottom: 0;
-  left: calc(50% - 20px);
-}
+        .section-title h2::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: #7eaa66;
+            bottom: 0;
+            left: calc(50% - 20px);
+        }
 
 .section-title p {
   margin-bottom: 0;
@@ -866,21 +881,21 @@ section {
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
-  background: rgba(43, 164, 85, 0.246);
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all ease-in-out 0.4s;
+    background: #37b8b475;
 }
 
 .services .icon-box .icon {
   margin-bottom: 10px;
 }
 
-.services .icon-box .icon i {
-  color: #83e447;
-  font-size: 36px;
-  transition: 0.3s;
-}
+    .services .icon-box .icon i {
+        color: #232324;
+        font-size: 36px;
+        transition: 0.3s;
+    }
 
 .services .icon-box h4 {
   font-weight: 500;
@@ -895,7 +910,7 @@ section {
 
 .services .icon-box p {
   line-height: 24px;
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 0;
 }
 
@@ -1121,12 +1136,12 @@ section {
 # Team
 --------------------------------------------------------------*/
 .team .member {
-  position: relative;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  border-radius: 5px;
-  background:rgba(43, 164, 85, 0.246); 
-  transition: 0.5s;
+    position: relative;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 5px;
+    background: #37b8b475;
+    transition: 0.5s;
 }
 
 .team .member .pic {
@@ -1147,12 +1162,12 @@ section {
   padding-left: 30px;
 }
 
-.team .member h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 20px;
-  color: #37517e;
-}
+    .team .member h4 {
+        font-weight: 700;
+        margin-bottom: 5px;
+        font-size: 24px;
+        color: #495057;
+    }
 
 .team .member span {
   display: block;
@@ -1591,14 +1606,14 @@ section {
   padding: 10px 12px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #159669;
-  border: 0;
-  padding: 12px 34px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 50px;
-}
+    .contact .php-email-form button[type=submit] {
+        background: #37b8b4;
+        border: 0;
+        padding: 12px 34px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 50px;
+    }
 
 .contact .php-email-form button[type=submit]:hover {
   background: #b4b377;
@@ -1670,9 +1685,10 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  font-size: 14px;
+  font-size: 16px;
   background: #f8d5ba;
 }
+
 
 #footer .footer-newsletter {
   padding: 50px 0;
@@ -1729,7 +1745,7 @@ section {
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #159669;
+  background: #37b8b4;
 }
 
 #footer .footer-top .footer-contact {
@@ -1856,4 +1872,8 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+#img-fluid animated {
+    max-width: 120%;
 }

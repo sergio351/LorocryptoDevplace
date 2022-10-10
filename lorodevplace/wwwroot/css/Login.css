@@ -1,3 +1,8 @@
+html{
+
+    height:100%;
+}
+
 :root {
     --main-bg-color: #198754;
     --Ojo: #5d5d5d;
@@ -13,6 +18,7 @@ body {
     padding: 0px;
     background-color: var(--main-bg-color);
     position: absolute;
+    
 }
 
 .app {
@@ -177,7 +183,7 @@ body {
 .olvidosucontraseña {
     text-align: left;
     vertical-align: text-top;
-    font-size: 20px;
+    font-size: 26px;
     font-family: Comfortaa;
     left: 652px;
     top: 908px;
@@ -191,7 +197,7 @@ body {
 .registrarse {
     text-align: left;
     vertical-align: text-top;
-    font-size: 20px;
+    font-size: 26px;
     font-family: Comfortaa;
     left: 938px;
     top: 908px;

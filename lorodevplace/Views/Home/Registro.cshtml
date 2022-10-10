@@ -1,111 +1,66 @@
-﻿<!DOCTYPE html>
+﻿<!doctype html>
 <html lang="en">
-<head>   
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+  	<titsrc()n 10</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-         
-<link href="~/css/Registro.css" rel="stylesheet" type="text/css">
-         
-</head>
-<body>  
-  
-<section class="vh-100" style="background-color: #ffff;">
-  <div class="container h-100 ">
-    <div class="row d-flex justify-content-center align-items-center h-100">
-      <div class="col-lg-12 col-xl-11">
-        <div class="card text-black" style="border-radius: 25px;">
-          <div class="card-body p-md-5" style="background-color: #ffc1078f;">
-            <div class="row justify-content-center">
-              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1" style="background-color: #ffc1078f;">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Registro</p>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="~/css/Registro.css">
 
-                <form class="mx-1 mx-md-4">
+	</head>
+	<body class="img js-fullheight" style="background-image: url(/img/h.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Nuevo Usuario</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<form action="#" class="signin-form">
+		      		<div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Nombre" required>
+		      		</div>
+					  <div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Apellido" required>
+		      		</div>
+					  <div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Usuario" required>
+		      		</div>
+					  <div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Edad" required>
+		      		</div>
+					  <div class="form-group">
+		      			<input type="text" class="form-control" placeholder="Email" required>
+		      		</div>
+					 
+	            <div class="form-group">
+	              <input id="password-field" type="password" class="form-control" placeholder="Contraseña" required>
+	              <span toggle="#password-field" class=""></span>
+	            </div>
+	           
+	         
+	          </form>
+	         
+	          <div class="social d-flex text-center">
+	          	<a asp-area="" asp-controller="Home" asp-action="Index" class="form-control btn btn-primary submit px-3"><span class=""></span> Cancelar</a>
+	          	<a href="#" class="form-control btn btn-primary submit px-3"><span class=""></span> Registrarse</a>
+	          </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Nombre</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" />
-                      <label class="form-label" for="form3Example4cd">Apellido</label>
-                    </div>
-                  </div>
-
-                    <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" />
-                      <label class="form-label" for="form3Example4cd">Nombre Usuario</label>
-                    </div>
-                  </div>
-
-                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Edad</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="email" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Email</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" />
-                      <label class="form-label" for="form3Example4c">Password</label>
-                    </div>
-                  </div>
-
-                
-
-                  <div class="form-check d-flex justify-content-center mb-5">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c" />
-                    <label class="form-check-label" for="form2Example3">
-                      Estoy de acuerdo con los <a href="#!">Terminos y condiciones</a>
-                    </label>
-                  </div>
-
-                  <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <a button type="button" class="btn btn-danger btn-lg" asp-area="" asp-controller="Home" asp-action="Privacy">Volver</a>
-                    <button type="button" class="btn btn-primary btn-lg">Registrarse</button>
-
-                  </div>
-                 
-
-                </form>
-
-              </div>
-              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-
-                <img src="~/img/lorotupac/LoginLoro.png"
-                  class="img-fluid" alt="Sample image">
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section>
-
+	
   <script src="~/js/Registro.js"></script>
 
-</body>
+	</body>
 </html>
+

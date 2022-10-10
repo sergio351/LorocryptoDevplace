@@ -1,4 +1,59 @@
-﻿
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - lorodevplace</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="~/lib/remixicon/fonts/remixicon.css" />
+   <link rel="stylesheet" href="~/lib/Swiper/swiper-bundle.css" />
+   <link rel="stylesheet" href="~/lib/glightbox/css/glightbox.css"/>
+   <link rel="stylesheet" href="~/lib/boxicons/css/boxicons.css"/>
+   
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+   
+   
+
+   <!-- Favicons -->
+  <link href="~/img/favicon.png" rel="icon">
+  <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+   <!-- Scroll -->
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+</head>
+
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center">
@@ -9,21 +64,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre Nosotros</a></li>
-          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#team">Equipo</a></li>
-          
-            
-          
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
-          <li><a class="getstarted scrollto" asp-area="" asp-controller="Home" asp-action="Privacy">Empezar</a></li>
+          <li><a class="nav-link scrollto"  href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto"  href="#about">Sobre Nosotros</a></li>
+          <li><a class="nav-link scrollto"  href="#services">Servicios</a></li>
+          <li><a class="nav-link scrollto"  href="#team">Equipo</a></li>
+          <li><a class="nav-link scrollto"  href="#contact">Contacto</a></li>
+          <li><a class="getstarted scrollto" asp-area="" asp-controller="Home" asp-action="Login">Ingresar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
+  <body>
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -39,7 +92,7 @@
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="~/img/cryptohome.jpg" class="img-fluid animated" alt="">
+          <img src="~/img/s.jpg" class="img-fluid animated" alt="">
         </div>
       </div>
     </div>
@@ -84,7 +137,7 @@
     </section><!-- End Cliens Section -->
 
     <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
+    <section id="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -199,14 +252,14 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
         <div class="section-title">
           <h2>Equipo</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <p>Somos un grupo de profesionales en Informatica, con mas de 2 años de experiencia, en ambitos publicos y privados, especializados en la implementacion de soluciones a organizaciones mediante el desarrollo de Software y explotacion de información, fomentando de esta manera su desarrollo y crecimiento.</p>
         </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="100">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/1655139281649.jpg" class="img-fluid1" alt=""></div>
               <div class="member-info">
                 <h4>Damian</h4>
                 <span>Chief Executive Officer</span>
@@ -223,7 +276,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-6 mt-4 mt-lg-0">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/70537776.jpg" class="img-fluid1 " alt=""></div>
               <div class="member-info">
                 <h4>Lucas</h4>
                 <span>Product Manager</span>
@@ -232,7 +285,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://www.linkedin.com/in/lucasludu/" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -240,7 +293,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="300">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid1" alt=""></div>
               <div class="member-info">
                 <h4>Nico</h4>
                 <span>CTO</span>
@@ -257,7 +310,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid1" alt=""></div>
               <div class="member-info">
                 <h4>Tupac</h4>
                 <span>Accountant</span>
@@ -274,7 +327,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid1" alt=""></div>
               <div class="member-info">
                 <h4>Fabian</h4>
                 <span>Accountant</span>
@@ -291,7 +344,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-6 mt-4">
             <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="400">
-              <div class="pic"><img src="~/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="~/img/team/1655249106136.jpg" class="img-fluid1" alt=""></div>
               <div class="member-info">
                 <h4>Sergio</h4>
                 <span>Accountant</span>
@@ -300,7 +353,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
                   <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  <a href="https://www.linkedin.com/in/sergio-velazquez-855186165/" target="_blank"> <i class="ri-linkedin-box-fill"></i> </a>
                 </div>
               </div>
             </div>
@@ -385,14 +438,16 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
       </div>
     </section><!-- End Contact Section -->
 
-  </main><!-- End #main -->
+  </main>
+  
+  <!-- End #main -->
  <!--whatsapp-->
-     
-
-<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"><i class="bi bi-whatsapp"></i></a>
-	
-
-
+<link rel="stylesheet" href="~/css/Wasap.css">
+     	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<a href="https://api.whatsapp.com" class="float" target="_blank">
+<i class="fa fa-whatsapp my-float"></i>
+</a>
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
@@ -450,7 +505,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Nuestras Redes Sociales</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+            
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -490,3 +545,14 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>-->
 
+
+  
+ <!-- Template Main JS File -->
+  <script src="~/js/main.js"></script>
+  <script src="~/js/script.js"></script>
+ 
+
+
+
+  </body>
+</html>
