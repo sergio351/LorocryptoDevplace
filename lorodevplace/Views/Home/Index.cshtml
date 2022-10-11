@@ -68,7 +68,7 @@ $(document).ready(function(){
           <li><a class="nav-link scrollto"  href="#about">Sobre Nosotros</a></li>
           <li><a class="nav-link scrollto"  href="#services">Servicios</a></li>
           <li><a class="nav-link scrollto"  href="#team">Equipo</a></li>
-          <li><a class="nav-link scrollto"  href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto"  href="#footer">Contacto</a></li>
           <li><a class="getstarted scrollto" asp-area="" asp-controller="Home" asp-action="Login">Ingresar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -134,7 +134,91 @@ $(document).ready(function(){
         </div>
 
       </div>
-    </section><!-- End Cliens Section -->
+    </section>
+    <!-- End Cliens Section -->
+
+   <!--Crypto Widget-->
+
+       <div class="container-fluid" style="margin-top:10px">
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-1">
+        <div class="card-body">
+          Market Cap:
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-2">
+        <div class="card-body">
+          Price:
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card crypto-gradient-card gradient-3">
+        <div class="card-body">
+          Volume(24h):
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table crypto-table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Symbol</th>
+            <th scope="col">Valor Mercado</th>
+            <th scope="col">Precio</th>
+            <th scope="col"></th>
+            <th scope="col">Vol(24h)</th>
+            <th scope="col">%(24h)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td id="ethLogo"><span class="text-warning"></span></td>
+            <td id="ethSymbol"></td>
+            <td id="ethCap"></td>
+            <td id="ethPrice" class="text-warning" >..loading</td>
+            <td id="ethPrice" class="text-warning"></td>
+            <td id="ethVol" class="text-warning"></td>
+            <td id="ethChange" class="text-danger">%5.54 <i class="fa fa-arrow-up"></i></td>
+          </tr>
+          <tr>
+
+            <td>2</td>
+            <td id="btcLogo"><span id="" class="text-warning" ></span></td>
+            <td>BTC</td>
+            <td id="btcCap">..loading..</td>
+            <td> <span id="btcPrice" class="text-warning">..loading..</span></td>
+            <td class="text-warning"></td>
+            <td id="btcVol" class="text-warning">..loading..</td>
+            <td id="btcChange" class="text-danger">..loading.. <i class="fa fa-arrow-down"></i></td>
+          </tr>
+          <tr>
+
+            <td>3</td>
+            <td id="shibLogo"> <span class="text-warning"> Solana</span></td>
+            <td id="shibSymbol">BTC</td>
+            <td id="shibCap">..loading</td>
+            <td id="shibPrice" class="text-warning">..loading</td>
+            <td  class="text-warning"></td>
+            <td id="shibVol" class="text-warning">..loading</td>
+            <td id="shibChange" class="text-danger">..loading<i class="fa fa-arrow-up"></i></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <p style="padding-top: 5px; text-align: center;">Actualizado: <span id="btcTime">...loading...</span></p>
+</div>
+
 
     <!-- ======= About Us Section ======= -->
     <section id="about">
@@ -364,11 +448,11 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
       </div>
     </section><!-- End Team Section -->
 
+   <!--Crypto Widget-->
+
    
 
-    
-
-    <!-- ======= Contact Section ======= -->
+    <!-- ======= Contact Section ======= 
     <section id="contact" class="contact">
       <div class="container" data-aos="fade-up">
 
@@ -436,7 +520,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> End Contact Section -->
 
   </main>
   
@@ -452,7 +536,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter">
+   <!-- <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
@@ -465,7 +549,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
         </div>
       </div>
     </div>
-
+    -->
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -550,6 +634,7 @@ Comenzamos en el año 2012 con la idea radical de que cualquier persona, desde c
  <!-- Template Main JS File -->
   <script src="~/js/main.js"></script>
   <script src="~/js/script.js"></script>
+  <script src="~/js/widgetcrypto.js"></script>
  
 
 
