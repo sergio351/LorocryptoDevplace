@@ -1,4 +1,4 @@
-﻿
+﻿@model UserLoginDto;
 
 <!DOCTYPE html>
 <html>
@@ -30,11 +30,13 @@
 
                 </div>
                 <div id="cierregoogle" class="cierregoogle"></div>
-                <form>
-                    <input type="text" id="boxusuario" class="boxusuario" placeholder="Usuario" onclick="myMove()"/>
-                    <input type="password" id="boxcontraseña" class="boxcontraseña" placeholder="Contraseña" onclick="myMove()"/>
-                    <a id="nextB" type="submit" class="boton" value="Iniciar" onclick="aHome()"  asp-area="" asp-controller="Home" asp-action="Billetera" ><i class="bi bi-caret-right" style="color:#FFFFFF ;font-size:xxx-large"></i></a>
-                </form>
+                <form asp-action="LoginPost">
+                    <input asp-for="Email" type="text" id="boxusuario" class="boxusuario" placeholder="Usuario" onclick="myMove()"/>
+                    <input asp-for="Password" type="password" id="boxcontraseña" class="boxcontraseña" placeholder="Contraseña" onclick="myMove()"/>
+                    <button type="submit" class="boton" id="nextB">
+                            <i class="bi bi-caret-right" style="color:#FFFFFF ;font-size:xxx-large"></i>
+                    </button>
+                    </form>
                 <a id="¿olvidosucontraseña?" class="olvidosucontraseña" href="../forgotpass">
                     ¿Olvido su contraseña?</a>
                 <a id="registrarse" class="registrarse" asp-area="" asp-controller="Home" asp-action="Registro">
