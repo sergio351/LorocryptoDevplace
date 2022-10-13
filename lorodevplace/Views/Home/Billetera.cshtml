@@ -1,76 +1,78 @@
-﻿ <!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>   
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/bootstrap-icons/font/bootstrap-icons.min.css" />
-         
+
     <link href="~/css/Billetera.css" rel="stylesheet" type="text/css">
     <link href="~/css/Wasap.css" rel="stylesheet" type="text/css">
 
 
-         
-   
+
+
 </head>
 <body style="background-image: url(/img/h.jpg);">
     <a asp-area="" asp-controller="Home" asp-action="Index"><i id="salir" class="bi bi-x-circle">SALIR</i></a>
-<div class="wallet">
- <!-- card 1  -->
+    <div class="wallet">
+        <!-- card 1  -->
 
- <a href="#">
- <div class="card" id="card1" style="bottom: 0px">
-   <h2 id="transaccion">CAMBIAR</h2><img id="visa" src="~/img/lorotupac/LoginLoro.png">
-   <div class="chip"></div>
-   <h1>SALDO</h1>
-   <p>Card Holder</p>
-   <p>Expiration Date</p>
-   <h2>Daniel Putzer</h2>
-   <h2>02/22</h2>
- </div>
- </a>
- <!-- card 2  -->
+        <a href="#">
+            <div class="card" id="card1" style="bottom: 0px">
+                <h2 id="transaccion">CAMBIAR</h2><img id="visa" src="~/img/lorotupac/LoginLoro.png">
+                <div class="chip"></div>
+                <h1>SALDO</h1>
+                <p>Card Holder</p>
+                <p>Expiration Date</p>
+                <h2>Daniel Putzer</h2>
+                <h2>02/22</h2>
+            </div>
+        </a>
+        <!-- card 2  -->
 
-  <a href="#">
- <div class="card" id="card2" style="bottom: 50px">
-     <h2 id="transaccion">SALDO</h2><img id="visa" src="~/img/lorotupac/LoginLoro.png">
-  <div class="chip"></div>
-  <h1>$200,000</h1>
-  <p>Card Holder</p>
-  <p>Expiration Date</p>
-  <h2>Daniel Putzer</h2>
-  <h2>03/33</h2>
- </div>
- </a>
+        <a href="#">
+            <div class="card" id="card2" style="bottom: 50px">
+                <h2 id="transaccion">SALDO</h2><img id="visa" src="~/img/lorotupac/LoginLoro.png">
+                <div class="chip"></div>
+                <h1>$200,000</h1>
+                <p>Card Holder</p>
+                <p>Expiration Date</p>
+                <h2>Daniel Putzer</h2>
+                <h2>03/33</h2>
+            </div>
+        </a>
 
- <!-- card 3  -->
-  <a href="#">
- <div class="card" id="card3" style="bottom: 100px">
-    <h2 id="transaccion">COMPRAR</h2> <img id="visa" src="~/img/lorotupac/LoginLoro.png">
-  <div class="chip"></div>
-  <h1>0000 0000 0000 0000</h1>
-  <p>Card Holder</p>
-  <p>Expiration Date</p>
-  <h2>Daniel Putzer</h2>
-  <h2>04/44</h2>
- </div>
- </a>
- 
+        <!-- card 3  -->
+        <a href="#">
+            <div class="card" id="card3" style="bottom: 100px">
+                <h2 id="transaccion">COMPRAR</h2> <img id="visa" src="~/img/lorotupac/LoginLoro.png">
+                <div class="chip"></div>
+                <h1>0000 0000 0000 0000</h1>
+                <p>Card Holder</p>
+                <p>Expiration Date</p>
+                <h2>Daniel Putzer</h2>
+                <h2>04/44</h2>
+            </div>
+        </a>
 
- <div class="department" id="one"></div>
- <div class="department" id="two"></div>
- <div class="department" id="three"></div>
 
- <h2 id="nombre"> Juan Cruz</h2>
+        <div class="department" id="one"></div>
+        <div class="department" id="two"></div>
+        <div class="department" id="three"></div>
 
- <img id="logo" src="~/img/lorotupac/LoginLoro.png">
+        <h2 id="nombre"> Juan Cruz</h2>
 
- 
-</div>
+        <img id="logo" src="~/img/lorotupac/LoginLoro.png">
 
-<!-- Crypto Converter ⚡ Widget --><div id="crypto-converter-widget"><crypto-converter-widget shadow symbol live background-color="#212529" border-radius="0.60rem" fiat="united-states-dollar" font-family="sans-serif" crypto="bitcoin" amount="1" decimal-places="2"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script></div><!-- /Crypto Converter ⚡ Widget -->
 
-  <script src="~/js/Billetera.js"></script>
-  </body>
+
+    </div>
+
+    <!-- Crypto Converter ⚡ Widget -->
+    <div id="crypto-converter-widget"><crypto-converter-widget shadow symbol live background-color="#212529" border-radius="0.60rem" fiat="united-states-dollar" font-family="sans-serif" crypto="bitcoin" amount="1" decimal-places="2"></crypto-converter-widget><a href="https://currencyrate.today/" target="_blank" rel="noopener"></a><script async src="https://cdn.jsdelivr.net/gh/dejurin/crypto-converter-widget@1.5.2/dist/latest.min.js"></script></div><!-- /Crypto Converter ⚡ Widget -->
+
+    <script src="~/js/Billetera.js"></script>
+</body>
 </html>

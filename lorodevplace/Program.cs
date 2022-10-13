@@ -1,6 +1,11 @@
+using lorodevplace.Services;
+using lorodevplace.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IConsumeApiUser, ConsumeApiUser>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
