@@ -1,4 +1,4 @@
-namespace lorodevplace.Models
+﻿namespace lorodevplace.Models
 {
     public class ErrorViewModel
     {
