@@ -1,41 +1,28 @@
 ﻿
-var departments = document.getElementsByClassName('department');
-var cards = document.getElementsByClassName('card');
-var bottomValues = ['0px', '50px', '100px'];
+////////////////modaljs///////////////////
+// Get DOM Elements
+const modal = document.querySelector('#my-modal');
+const modalBtn = document.querySelector('#modal-btn');
+const closeBtn = document.querySelector('.close');
 
-var oldBottom = 0;
-var newBottom = 0;
+// Events
+modalBtn.addEventListener('click', openModal);
+closeBtn.addEventListener('click', closeModal);
+window.addEventListener('click', outsideClick);
 
-for (var i = 0; i < cards.length; i++) {
-    cards[i].addEventListener('click', function () {
-        animation(this.id);
-    })
+// Open
+function openModal() {
+    modal.style.display = 'block';
 }
 
-function animation(id) {
+// Close
+function closeModal() {
+    modal.style.display = 'none';
+}
 
-    for (var i = 0; i < cards.length; i++) {
-        var card = document.getElementById(cards[i].id);
-        card.style.bottom = bottomValues[i];
-        if (card.id != id) {
-            card.name = '';
-        }
-    }
-
-    var selected = document.getElementById(id);
-    selected.style.transition = '0.3s';
-
-    if (selected.name != 'moved') {
-
-        oldBottom = parseInt(selected.style.bottom, 10);
-        newBottom = '350px';
-        selected.style.bottom = newBottom;
-        selected.name = 'moved';
-
-    } else if (selected.name == 'moved') {
-
-        selected.style.bottom = oldBottom + 'px';
-        selected.name = '';
-
+// Close If Outside Click
+function outsideClick(e) {
+    if (e.target == modal) {
+        modal.style.display = 'none';
     }
 }

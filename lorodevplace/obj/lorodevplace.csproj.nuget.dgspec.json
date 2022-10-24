@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj": {}
+    "D:\\frontlorov2\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj": {
+    "D:\\frontlorov2\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj",
+        "projectUniqueName": "D:\\frontlorov2\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj",
         "projectName": "lorodevplace",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\LorocryptoDevplace\\lorodevplace\\obj\\",
+        "projectPath": "D:\\frontlorov2\\LorocryptoDevplace\\lorodevplace\\lorodevplace.csproj",
+        "packagesPath": "C:\\Users\\Gian\\.nuget\\packages\\",
+        "outputPath": "D:\\frontlorov2\\LorocryptoDevplace\\lorodevplace\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gian\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,8 +55,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
