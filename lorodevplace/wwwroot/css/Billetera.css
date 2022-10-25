@@ -2506,7 +2506,7 @@ textarea.form-control {
 .btn {
     display: inline-block;
     font-weight: 400;
-    color: #858796;
+    color: #ffff;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
@@ -3141,6 +3141,7 @@ fieldset:disabled a.btn {
 .btn-block {
     display: block;
     width: 100%;
+    background-color: #1cc88a;
 }
 
     .btn-block + .btn-block {
@@ -11290,7 +11291,7 @@ a:focus {
     .sidebar .sidebar-brand {
         height: 4.375rem;
         text-decoration: none;
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-weight: 800;
         padding: 1.5rem 1rem;
         text-align: center;
@@ -11389,7 +11390,7 @@ a:focus {
             }
 
             .sidebar .nav-item .nav-link span {
-                font-size: 0.85rem;
+                font-size: 1.0rem;
                 display: inline;
             }
 
@@ -12223,7 +12224,8 @@ footer.sticky-footer {
 body.sidebar-toggled footer.sticky-footer {
     width: 100%;
 }
-///////////////modal//////////////////
+///////////////modal/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 :root {
     --modal-duration: 1s;
     --modal-color: #428bca;
@@ -12241,7 +12243,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
 .button {
-    background: #428bca;
+    background: #1cc88a;
     padding: 1em 2em;
     color: #fff;
     border: 0;
@@ -12250,7 +12252,7 @@ body.sidebar-toggled footer.sticky-footer {
 }
 
     .button:hover {
-        background: #3876ac;
+        background: #f6c23e;
     }
 
 .modal {
@@ -12264,6 +12266,7 @@ body.sidebar-toggled footer.sticky-footer {
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
 
 .modal-content {
     margin: 10% auto;
@@ -12281,14 +12284,14 @@ body.sidebar-toggled footer.sticky-footer {
 .modal-header {
     background: var(--modal-color);
     padding: 15px;
-    color: #e74a3b;
+    color: #1cc88a;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
 
 .modal-body {
     padding: 10px 20px;
-    background: #e74a3b;
+    background: #f8f9fc;
 }
 
 .modal-footer {
